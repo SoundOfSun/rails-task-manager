@@ -41,6 +41,15 @@ p {
 .btn-light:hover {
   opacity: 1;
 }
+p.done {
+  color: rgb(127,180,20);
+}
+p.to-do {
+  color: rgb(152,74,89);
+}
+.task i {
+  font-size: 24px;
+}
 /* Footer container */
 .footer {
   margin-top: 20px;

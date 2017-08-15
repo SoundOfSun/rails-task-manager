@@ -9,7 +9,14 @@
 <% @tasks.each do |task| %>
   <div class="task">
     <h2><%= task.title %></h2>
-    <p><%= task.status %></p>
+    <!-- <p><%= task.status == true ? "done" : "to do" %></p> -->
+    <% if task.status == true %>
+      <i class="fa fa-check-square-o" aria-hidden="true"></i>
+      <p class="done">done</p>
+    <% else %>
+      <i class="fa fa-square-o" aria-hidden="true"></i>
+      <p class="to-do">to do </p>
+    <% end %>
 
     <%= link_to task_path(task) do %>
       <div class="btn btn-light">
